@@ -777,7 +777,7 @@ function file_video(path) {
     },
     {
       text: 'VLC',
-      href: `vlc://${myUrl.href}`,
+      href: `vlc://${myUrl.url}`,
     },
     {
       text: 'PotPlayer',
