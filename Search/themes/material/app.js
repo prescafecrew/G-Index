@@ -754,6 +754,14 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
  const url = window.location.origin + path;
+ const myURL = new URL('https://movies:movies@movies.israel2401.workers.dev/0:/');
+ //console.log(myURL.password);
+ // Prints xyz
+
+ myURL.password = 'movies';
+ //console.log(myURL.href);
+ // Prints https://abc:123@example.com
+	
   let player_items = [
     {
       text: 'MXPlayer(Free)',
@@ -769,7 +777,7 @@ function file_video(path) {
     },
     {
       text: 'VLC',
-      href: `vlc://${url}`,
+      href: `vlc://${myUrl.href}`,
     },
     {
       text: 'PotPlayer',
