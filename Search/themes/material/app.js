@@ -834,8 +834,8 @@ function file_audio(path) {
 	<br>
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${myUrl.url}"/>
+	  <label class="mdui-textfield-label">This is a sample link</label>
+	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML Reference address</label>
