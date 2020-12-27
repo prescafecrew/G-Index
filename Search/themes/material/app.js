@@ -716,7 +716,7 @@ function file_code(path) {
 </div>
 <div class="mdui-textfield">
 	<label class="mdui-textfield-label">Download Link</label>
-	<input class="mdui-textfield-input" type="text" value="${this is a sample}"/>
+	<input class="mdui-textfield-input" type="text" value="${url}"/>
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 <script src="https://cdn.staticfile.org/ace/1.4.7/ace.js"></script>
@@ -835,7 +835,7 @@ function file_audio(path) {
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${myUrl.url}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML Reference address</label>
