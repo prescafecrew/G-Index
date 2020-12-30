@@ -755,9 +755,8 @@ function copyToClipboard(str) {
 function file_video(path) {
  const url = window.location.origin + path;
  const myURL = new URL('https://movies:movies@movies.israel2401.workers.dev/0:/');
- console.log(window.location.origin);
- console.log(window.location.origin + path);
- console.log(this is the third output);
+ //console.log(window.location.origin);
+ //console.log(window.location.origin + path);
  console.log(url);
  // Prints xyz
 
