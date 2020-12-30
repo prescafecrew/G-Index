@@ -757,7 +757,7 @@ function file_video(path) {
  const myURL = new URL('https://movies:movies@movies.israel2401.workers.dev/0:/');
  console.log(window.location.origin);
  console.log(window.location.origin + path);
- console.log($url);
+ console.log(url);
  // Prints xyz
 
  myURL.password = 'movies';
