@@ -754,6 +754,9 @@ function copyToClipboard(str) {
 // Document display video |mp4|webm|avi|
 function file_video(path) {
  const url = window.location.origin + path;
+ var str = url.toString();
+ var res = str.replace("https://", "https://movies:movies@");
+ console.log(res);
  const myURL = new URL('https://movies:movies@movies.israel2401.workers.dev/0:/');
  console.log(window.location.origin);
  console.log(window.location.origin + path);
