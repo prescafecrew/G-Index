@@ -915,20 +915,20 @@ function file_image(path) {
     <br>
     <div id="imgWrap">
         ${targetText}
-	    <img class="mdui-img-fluid" src="${url}"/>
+	    <img class="mdui-img-fluid" src="${res}"/>
     </div>
 	<br>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${res}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="<img src='${url}' />"/>
+	  <input class="mdui-textfield-input" type="text" value="<img src='${res}' />"/>
 	</div>
         <div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Markdown Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="![](${url})"/>
+	  <input class="mdui-textfield-input" type="text" value="![](${res})"/>
 	</div>
         <br>
 </div>
