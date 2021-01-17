@@ -836,15 +836,6 @@ function file_audio(path) {
 	  <source src="${res}"">
 	</audio>
 	<br>
-	<!-- Fixed label -->
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${res}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <textarea class="mdui-textfield-input"><audio><source src="${res}"></audio></textarea>
-	</div>
 </div>
 <a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
@@ -910,28 +901,7 @@ function file_image(path) {
     //             ${targetObj[path].next ? `<span id="rightBtn" data-direction="right"  data-filepath="${targetObj[path].next}"><i class="mdui-icon material-icons">&#xe5c8;</i><span style="margin-left: 10px;">Next</span></span>` : `<span style="cursor: not-allowed;color: rgba(0,0,0,0.2);"><i class="mdui-icon material-icons">&#xe5c4;</i><span style="margin-left: 10px;">Prev</span></span>`}
     // </div>
   }
-  var content = `
-<div class="mdui-container-fluid">
-    <br>
-    <div id="imgWrap">
-        ${targetText}
-	    <img class="mdui-img-fluid" src="${res}"/>
-    </div>
-	<br>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${res}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="<img src='${res}' />"/>
-	</div>
-        <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Markdown Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="![](${res})"/>
-	</div>
-        <br>
-</div>
+
 <a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
     `;
   //my code
