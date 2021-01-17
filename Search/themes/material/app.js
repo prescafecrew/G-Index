@@ -806,8 +806,16 @@ function file_video(path) {
 	<video class="mdui-video-fluid mdui-center" preload controls>
 	  <source src="${res}" type="video/mp4">
 	</video>
-	${playBtn}
+	<br>${playBtn}
 	<!-- Fixed label -->
+	<div class="mdui-textfield">
+	  <label class="mdui-textfield-label">Download Link</label>
+	  <input class="mdui-textfield-input" type="text" value="${res}"/>
+	</div>
+	<div class="mdui-textfield">
+	  <label class="mdui-textfield-label">HTML Refrence Adress</label>
+	  <textarea class="mdui-textfield-input"><video><source src="${res}" type="video/mp4"></video></textarea>
+	</div>
 </div>
 <a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
@@ -827,6 +835,16 @@ function file_audio(path) {
 	<audio class="mdui-center" preload controls>
 	  <source src="${res}"">
 	</audio>
+	<br>
+	<!-- Fixed label -->
+	<div class="mdui-textfield">
+	  <label class="mdui-textfield-label">Download link</label>
+	  <input class="mdui-textfield-input" type="text" value="${res}"/>
+	</div>
+	<div class="mdui-textfield">
+	  <label class="mdui-textfield-label">HTML Reference address</label>
+	  <textarea class="mdui-textfield-input"><audio><source src="${res}"></audio></textarea>
+	</div>
 </div>
 <a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
