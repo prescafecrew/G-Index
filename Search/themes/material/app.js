@@ -804,7 +804,7 @@ function file_video(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<video class="mdui-video-fluid mdui-center" preload controls>
-	  <source src="${url}" type="video/mp4">
+	  <source src="${res}" type="video/mp4">
 	</video>
 	<br>${playBtn}
 	<!-- Fixed label -->
@@ -817,7 +817,7 @@ function file_video(path) {
 	  <textarea class="mdui-textfield-input"><video><source src="${res}" type="video/mp4"></video></textarea>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+<a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
@@ -833,20 +833,20 @@ function file_audio(path) {
 <div class="mdui-container-fluid">
 	<br>
 	<audio class="mdui-center" preload controls>
-	  <source src="${url}"">
+	  <source src="${res}"">
 	</audio>
 	<br>
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${res}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML Reference address</label>
 	  <textarea class="mdui-textfield-input"><audio><source src="${res}"></audio></textarea>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+<a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
   $('#content').html(content);
 }
@@ -854,11 +854,11 @@ function file_audio(path) {
 // Document display pdf  pdf
 function file_pdf(path) {
   const url = window.location.origin + path;
-  const inline_url = `${url}?inline=true`
+  const inline_url = `${res}?inline=true`
   const file_name = decodeURI(path.slice(path.lastIndexOf('/') + 1, path.length))
   var content = `
 	<object data="${inline_url}" type="application/pdf" name="${file_name}" style="width:100%;height:94vh;"><embed src="${inline_url}" type="application/pdf"/></object>
-    <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+    <a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
   $('#content').removeClass('mdui-container').addClass('mdui-container-fluid').css({padding: 0}).html(content);
 }
@@ -932,7 +932,7 @@ function file_image(path) {
 	</div>
         <br>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+<a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
     `;
   //my code
   $('#content').html(content);
