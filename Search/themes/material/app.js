@@ -804,26 +804,16 @@ function file_video(path) {
   
 <div class="mdui-container-fluid">
 	<br>
-	<video
-    		class="video-js"
-   		controls
-   		preload="auto"
-  		width="640"
-  		height="264"
-  		data-setup="{}"
-	>
-    	<source src="${res}" type="video/mp4" />
-	    <p class="vjs-no-js">
-	     To view this video please enable JavaScript, and consider upgrading to a
-	     web browser that
-	     <a href="https://videojs.com/html5-video-support/" target="_blank"
-		>supports HTML5 video</a
-	    >
+	<video class="video-js" preload controls>
+    		<source src="${res}" type="video/mp4" />
+		    <p class="vjs-no-js">
+		     To view this video please enable JavaScript, and consider upgrading to a
+		     web browser that
+		     <a href="https://videojs.com/html5-video-support/" target="_blank"
+			>supports HTML5 video</a
+		    >
 	   </p>
  	</video>
-//	<video class="mdui-video-fluid mdui-center" preload controls>
-//	  <source src="${res}" type="video/mp4">
-	</video>
 	<br>${playBtn}
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
