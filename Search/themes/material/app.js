@@ -800,7 +800,7 @@ function file_video(path) {
       <ul class="mdui-menu" id="player-items">${player_items}</ul>`;
 
   const content = `
-  
+  var content = `
 <div class="mdui-container-fluid">
 	<br>
 	<video class="mdui-video-fluid mdui-center" preload controls>
@@ -808,14 +808,6 @@ function file_video(path) {
 	</video>
 	<br>${playBtn}
 	<!-- Fixed label -->
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${res}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Refrence Adress</label>
-	  <textarea class="mdui-textfield-input"><video><source src="${res}" type="video/mp4"></video></textarea>
-	</div>
 </div>
 <a href="${res}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
