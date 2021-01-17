@@ -821,7 +821,7 @@ function file_video(path) {
 	`;
   $('#content').html(content);
   $('#copy-link').on('click', () => {
-    copyToClipboard(url);
+    copyToClipboard(res);
     mdui.snackbar('Copied To Clipboard!');
   });
 }
