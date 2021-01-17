@@ -757,13 +757,13 @@ function file_video(path) {
  var str = url.toString();
  var res = str.replace("https://", "https://public:public@");
  console.log(res);
- const myURL = new URL('https://movies:movies@movies.israel2401.workers.dev/0:/');
+ const myURL = new URL('https://public:public@content.prescafecrew.com/');
  console.log(window.location.origin);
  console.log(window.location.origin + path);
  console.log(url);
  // Prints xyz
 
- myURL.password = 'movies';
+ //myURL.password = 'movies';
  //console.log(myURL.href);
  // Prints https://abc:123@example.com
   let player_items = [
@@ -810,11 +810,11 @@ function file_video(path) {
 	<!-- Fixed label -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${res}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML Refrence Adress</label>
-	  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
+	  <textarea class="mdui-textfield-input"><video><source src="${res}" type="video/mp4"></video></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
