@@ -781,7 +781,7 @@ function file_video(path) {
       href: `nplayer-${res}`,
     },
     {
-      text: 'VLC',
+      text: 'VLC (Mobile Only)',
       href: `vlc://${res}`,
     },
     {
